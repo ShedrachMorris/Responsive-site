@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+      }
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 200px;
+      }
+      li {
+        padding: 7px;
+        margin: 2px;
+        color: black;
+        font-size: large;
+      }
+      .btn {
+        position: absolute;
+        right: 30px;
+        top: 150px;
+        border-radius: 19px;
+        background: #e0e0e0;
+        box-shadow: inset 10px 10px 13px #c7c7c7, inset -10px -10px 13px #f9f9f9;
+      }
+      .btn:hover {
+        border-radius: 61px;
+        background: #e0e0e0;
+        box-shadow: 5px 5px 14px #5a5a5a, -5px -5px 14px #ffffff;
+      }
+      hr {
+        position: relative;
+        left: 40%;
+        width: 20%;
+        color: rgb(199, 17, 17);
+      }
+      h2 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 40px;
+        color: rgb(241, 236, 236);
+      }
+      p {
+        font-family: Georgia, serif;
+        color: rgb(228, 215, 39);
+      }
+      .sub {
+        position: relative;
+        left: 300px;
+        margin: 30px;
+        font-size: 20px;
+        width: 300px;
+        border: 2px;
+        padding: 15px;
+        border-radius: 37px;
+        background: #e0e0e0;
+        box-shadow: inset 5px 5px 8px #5a5a5a, inset -5px -5px 8px #ffffff;
+      }
+      .sub:hover {
+        border-radius: 37px;
+        background: #5c4b4b;
+        box-shadow: 5px 5px 14px #5a5a5a, -5px -5px 14px #ffffff;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(24, 5, 5);
+        font-size: 20px;
+      }
+      .sec1 {
+        background: rgb(61, 169, 202);
+      }
+      .logo {
+        width: 200px;
+        height: 200px;
+      }
+      .images {
+        width: 300px;
+        height: 300px;
+      }
+      .newhead {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 40px;
+        color: rgb(19, 18, 18);
+        display: flex;
+        justify-content: center;
+      }
+      .cost1 {
+        border: 2px solid rgb(132, 51, 207);
+        padding: 50px;
+        width: 102%;
+        background: rgb(132, 51, 207);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: rgb(247, 240, 240);
+      }
+      .cost2 {
+        border: 2px solid rgb(226, 61, 55);
+        padding: 50px;
+        width: 102%;
+        background: rgb(226, 61, 55);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: rgb(243, 238, 238);
+      }
+      .cost3 {
+        border: 2px solid rgb(43, 168, 226);
+        padding: 50px;
+        width: 102%;
+        background: rgb(43, 168, 226);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: rgb(247, 241, 241);
+      }
+      h1 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+      }
+      .p1 {
+        width: 90px;
+        height: 90px;
+        border: 2px solid black;
+        border-radius: 50px;
+      }
+      .p-descripe {
+        color: black;
+        font-size: large;
+      }
+      strong {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 40px;
+        color: rgb(19, 18, 18);
+        display: flex;
+        justify-content: center;
+        width: auto;
+      }
+      .pin {
+        color: black;
+        font-size: 20px;
+      }
+      .sec3 {
+        background-image: url(wallpaper.jpeg);
+        background-size: cover;
+        width: 1080px;
+        height: 500px;
+      }
+      .wall {
+        width: 600px;
+        position: relative;
+        left: 400px;
+        margin: 50px;
+        padding: 30px;
+        font-size: 20px;
+        border-radius: 40px;
+        background: transparent;
+        box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;
+      }
+      .wall:hover {
+        border-radius: 40px;
+        background: rgb(133, 25, 97);
+        box-shadow: 5px 5px 10px #949494, -5px -5px 10px #ffffff;
+      }
+      .para {
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+      }
+      .colla {
+        border-radius: 51px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 14px 14px 28px #5a5a5a, -14px -14px 28px #ffffff;
+      }
+      .colla:hover {
+        border-radius: 25px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 16px 16px 3px #bebebe, -16px -16px 3px #ffffff;
+      }
+      .col1:hover {
+        background: linear-gradient(145deg, #0c0c0c, #130f0f);
+        box-shadow: 16px 16px 3px #bebebe, -16px -16px 3px #ffffff;
+      }
+      .col2 {
+        border-radius: 57px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 5px 5px 8px #5a5a5a, -5px -5px 8px #ffffff;
+      }
+      .image {
+        border-radius: 65px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
+      }
+      .col2:hover {
+        border-radius: 7px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 5px 5px 12px #5a5a5a, -5px -5px 12px #ffffff;
+      }
+      .image:hover {
+        border-radius: 87px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
+      }
+      .nav {
+        float: right;
+        margin: 20px;
+        width: 300px;
+        border: 2px;
+        padding: 10px;
+        border-radius: 37px;
+        background: #e0e0e0;
+        box-shadow: inset 5px 5px 8px #5a5a5a, inset -5px -5px 8px #ffffff;
+      }
+      li {
+        margin: 10px;
+      }
+      .list {
+        border-radius: 34px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
+      }
+      .list:hover {
+        border-radius: 19px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow: 10px 10px 0px #5a5a5a, -10px -10px 0px #ffffff;
+      }
+      .logo {
+        position: ;
+      }
+      .head {
+        position: fixed;
+        bottom: 500px;
+        right: 0;
+        background: transparent;
+      }
+      .badge {
+        position: fixed;
+        bottom: 450px;
+        right: 900px;
+      }
+      .sub1 {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sec1" id="home">
+      <div>
+        <div>
+          <div class="badge">
+            <img src="laundrylogo_prev_ui.png" alt="" class="logo" />
+          </div>
+          <ul class="nav head">
+            <li class="list"><a href="#home">Home</a></li>
+            <li class="list"><a href="#service">Service</a></li>
+            <li class="list"><a href="#about">About</a></li>
+          </ul>
+        </div>
+
+        <button class="btn">Subscribe</button>
+        <ul class="menu">
+          <li class="list"><a href="">24hrs Delivery</a></li>
+          <li class="list"><a href="">Prices and Plans</a></li>
+          <li class="list"><a href="">Ironing-Only Services</a></li>
+          <li class="list"><a href="">How it works</a></li>
+          <li class="list"><a href="">More Services</a></li>
+        </ul>
+      </div>
+      <div class="container text-center">
+        <div class="row row-cols-1">
+          <div class="col">
+            <h5>What we do</h5>
+            <h2>
+              Do you really want to
+              <p>miss out on the luxury of having all your laundry Pickup,</p>
+              drycleaned & Returned back to you weekly
+              <hr />
+            </h2>
+            <h5>Laundry is a very important part of your daily life.</h5>
+            <img src="laundrycloth_prev_ui.png" alt="" />
+          </div>
+          <button class="sub">
+            <img src="p1.jpg" alt="" class="sub1" />Schedule Your Pickup
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec2" id="service">
+      <h3 class="newhead">
+        Pick the Monthly budget <br />
+        that suits your pocket.
+      </h3>
+      <div class="container text-center">
+        <div class="row row-cols-3">
+          <div class="col">
+            <img src="images1.jpeg" alt="" class="images" />
+            <h3 class="cost1 col1">=N=30,000</h3>
+          </div>
+          <div class="col">
+            <img src="images2.jpeg" alt="" class="images" />
+            <h3 class="cost2 col1">=N=45,000</h3>
+          </div>
+          <div class="col">
+            <img src="images3.jpeg" alt="" class="images" />
+            <h3 class="cost3 col1">=N=55,000</h3>
+          </div>
+        </div>
+        <h1>
+          Our branches are here and <br />
+          ready to pickup from you
+        </h1>
+      </div>
+      <div class="container text-center">
+        <div class="row row-cols-5">
+          <div class="colla">
+            <img src="p1.jpg" alt="" class="p1" />
+            <p class="p-descripe">Banana Island - Ikoyi</p>
+          </div>
+          <div class="colla">
+            <img src="p2.jpg" alt="" class="p1" />
+            <p class="p-descripe">Ikeja GRA, Mainland</p>
+          </div>
+          <div class="colla">
+            <img src="p3.jpg" alt="" class="p1" />
+            <p class="p-descripe">Lekki Phase 1 axis</p>
+          </div>
+          <div class="colla">
+            <img src="p4.jpg" alt="" class="p1" />
+            <p class="p-descripe">Victoria Island Lagos</p>
+          </div>
+          <div class="colla">
+            <img src="p5.jpg" alt="" class="p1" />
+            <p class="p-descripe">Ajah| Ibeju | Abijo</p>
+          </div>
+        </div>
+      </div>
+      <strong>How our affordable laundry service Subscription works</strong>
+      <div class="container text-center">
+        <div class="row row-cols-3">
+          <div class="col2">
+            <img src="calender.jpg" alt="" class="image" />
+            <h4>Pick your Clothes</h4>
+            <p class="pin">
+              After subscribing, choose the day and time you want your pickup to
+              begin.
+            </p>
+          </div>
+          <div class="col2">
+            <img src="laundry.jpg" alt="" class="image" />
+            <h4>Laundry & Dry clean</h4>
+            <p class="pin">
+              A specific pickup specialist arrives at your home to collect your
+              dirty items, analyze them and head to the factory for dry cleaning
+              process
+            </p>
+          </div>
+          <div class="col2">
+            <img src="relax.jpg" alt="" class="image" />
+            <h4>Relax, We Deliver</h4>
+            <p class="pin">
+              chair back Enjoy your week and relax; you will receive sparkling
+              clothing within 5 days.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec3" id="about">
+      <div class="wall">
+        <h2 class="para">
+          We are your trusted dry cleaning and laundry service partner
+        </h2>
+        <p class="pin">
+          Having someone enter your home is a major matter, as we all know. We
+          thoroughly investigate each laundrymann dry cleaner and pickup
+          representative before selecting them to serve as your account officer.
+        </p>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
